@@ -13,9 +13,9 @@ template:
     - hello-world-repo
   info:
     git url: >-
-      [https://github.com/gee4vee/knative-serving-toolchain](https://github.com/gee4vee/knative-serving-toolchain)
+      [https://github.com/open-toolchain/knative-serving-toolchain](https://github.com/open-toolchain/knative-serving-toolchain)
     git branch: >-
-      [master](https://github.com/gee4vee/knative-serving-toolchain/tree/master)
+      [master](https://github.com/open-toolchain/knative-serving-toolchain/tree/master)
 toolchain:
   name: 'knative-serving-toolchain-{{timestamp}}'
   template:
@@ -26,7 +26,7 @@ services:
     service_id: hostedgit
     parameters:
       repo_name: 'hello-knative-serving-{{timestamp}}'
-      repo_url: 'https://github.com/gee4vee/hello-knative-serving'
+      repo_url: 'https://github.com/open-toolchain/hello-knative-serving'
       type: clone
       has_issues: true
       enable_traceability: true
